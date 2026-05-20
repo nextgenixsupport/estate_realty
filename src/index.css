@@ -44,3 +44,19 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #ca8a04;
 }
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: partner-scroll 20s linear infinite;
+}
+
+@keyframes partner-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
