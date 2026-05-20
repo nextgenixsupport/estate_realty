@@ -3,7 +3,7 @@ import { MapPin, IndianRupee, X, Phone, Mail, Send } from 'lucide-react';
 import { PROPERTIES } from '../data/constants';
 import { sendLeadEmail } from '../utils/email';
 
-const initialForm = { name: '', email: '', phone: '' };
+const initialForm = { name: '', email: '', phone: '', budget: '' };
 
 export default function Properties() {
   const [selectedProperty, setSelectedProperty] = useState(null);
@@ -30,7 +30,8 @@ export default function Properties() {
         phone: formData.phone,
         property: selectedProperty.title,
         location: selectedProperty.location,
-        price: selectedProperty.price
+        price: selectedProperty.price,
+        budget: formData.budget
       });
       setStatus('Inquiry sent successfully.');
       setFormData(initialForm);
@@ -60,6 +61,7 @@ export default function Properties() {
                 <input required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full border rounded-lg px-3 py-2" placeholder="Name" />
                 <input required type="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="w-full border rounded-lg px-3 py-2" placeholder="Email ID" />
                 <input required value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="w-full border rounded-lg px-3 py-2" placeholder="Contact No" />
+                <select value={formData.budget} onChange={(e) => setFormData({ ...formData, budget: e.target.value })} className="w-full border rounded-lg px-3 py-2"><option value="">Select budget range...</option><option>₹1.00 Cr - ₹1.25 Cr</option><option>₹1.25 Cr - ₹1.50 Cr</option><option>₹1.50 Cr - ₹1.75 Cr</option><option>₹1.75 Cr - ₹2.00 Cr</option><option>₹2.00 Cr - ₹2.50 Cr</option><option>₹2.50 Cr - ₹3.00 Cr</option><option>₹3.00 Cr+</option></select>
                 <button disabled={sending} type="submit" className="w-full bg-slate-900 text-white py-2.5 rounded-lg flex items-center justify-center gap-2">{sending ? 'Sending...' : 'Send Inquiry'} <Send size={14} /></button>
                 {status && <p className="text-xs text-slate-600">{status}</p>}
                 <div className="text-xs text-slate-500 pt-2 border-t space-y-1"><p className="flex items-center gap-2"><Mail size={14} /> royalinvestorealty@gmail.com</p><p className="flex items-center gap-2"><Phone size={14} /> +91 92890 35225</p></div>

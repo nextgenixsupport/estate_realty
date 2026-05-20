@@ -92,6 +92,7 @@ export default async function handler(req, res) {
       `Property: ${payload.property || '-'}`,
       `Location: ${payload.location || '-'}`,
       `Price: ${payload.price || '-'}`,
+      `Budget: ${payload.budget || '-'}`,
       `Message: ${payload.message || '-'}`,
       `Submitted At: ${new Date().toISOString()}`
     ];
