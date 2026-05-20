@@ -92,3 +92,7 @@ body {
   transform: scale(0.97);
   box-shadow: 0 2px 10px rgba(15,23,42,.2);
 }
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 20% 20%, rgba(251,191,36,.18), transparent 35%), radial-gradient(circle at 80% 60%, rgba(255,255,255,.12), transparent 30%);
+}
