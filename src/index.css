@@ -44,3 +44,51 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #ca8a04;
 }
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: partner-scroll 20s linear infinite;
+}
+
+@keyframes partner-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 1.2s ease, transform 5s ease;
+}
+.hero-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.wow-glow {
+  animation: wowFloat 3s ease-in-out infinite;
+}
+@keyframes wowFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.glass-card {
+  border: 1px solid rgba(255,255,255,0.55);
+  box-shadow: 0 12px 40px rgba(15,23,42,0.15);
+}
+.tap-animate {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.tap-animate:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 10px rgba(15,23,42,.2);
+}
