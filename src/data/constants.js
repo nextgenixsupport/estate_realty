@@ -2,9 +2,9 @@ export const PROPERTIES = [
   {
     id: 1,
     title: "Eldeco Terra & Sol",
-    location: "Gurgaon",
+    location: "Gurugram",
     price: "₹2.50 Cr - ₹3.00 Cr",
-    desc: "Palatial residences with iconic architecture, skyline views, and premium amenities in South Gurgaon.",
+    desc: "Palatial residences with iconic architecture, skyline views, and premium amenities in Gurugram.",
     tags: ["Ultra Luxury", "3 BR", "High-Rise"],
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80",
     gallery: [
