@@ -97,12 +97,14 @@ export default function Home({ setCurrentView }) {
       <div className="py-20 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h3 className="text-sm font-bold tracking-[0.2em] text-slate-400 uppercase mb-8">Our Trusted Channel Partners</h3>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
-            {BRANDS.map(brand => (
-              <div key={brand} className="text-2xl md:text-3xl font-serif font-bold text-slate-400 hover:text-slate-900 transition-colors cursor-default">
-                {brand.toUpperCase()}
-              </div>
-            ))}
+          <div className="marquee">
+            <div className="marquee-track">
+              {[...BRANDS, ...BRANDS].map((brand, idx) => (
+                <div key={`${brand}-${idx}`} className="text-2xl md:text-3xl font-serif font-bold text-slate-400 px-8">
+                  {brand.toUpperCase()}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

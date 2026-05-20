@@ -28,7 +28,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Email Us</h3>
               <p className="text-slate-500 mb-4 text-sm">Drop us a line anytime</p>
-              <a href="mailto:info@royalinvestorrealty.com" className="font-medium text-slate-900 hover:text-yellow-600">info@royalinvestorrealty.com</a>
+              <a href="mailto:royalinvestorealty@gmail.com" className="font-medium text-slate-900 hover:text-yellow-600">royalinvestorealty@gmail.com</a>
             </div>
           </div>
 
