@@ -1,40 +1,60 @@
 export const PROPERTIES = [
   {
     id: 1,
-    title: "3 BHK Luxury Floors",
-    location: "Sector 2, South of Gurugram (Sohna)",
-    desc: "Premium 3 BHK luxury floors designed for modern living. A peaceful retreat nestled in the foothills of the Aravallis blending scenic beauty with modern living.",
-    tags: ["3 BHK", "Luxury Floors", "Gated Community"],
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    developer: "Sohna Estates"
+    title: "Eldeco Terra & Sol",
+    location: "Gurugram",
+    price: "₹2.50 Cr - ₹3.00 Cr",
+    desc: "Palatial residences with iconic architecture, skyline views, and premium amenities in Gurugram.",
+    tags: ["Ultra Luxury", "3 BR", "High-Rise"],
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=1600&q=80"
+    ],
+    developer: "Eldeco Group"
   },
   {
     id: 2,
-    title: "BLF Infratech",
-    location: "Sohna Road, South of Gurugram",
-    desc: "Modern luxury floors with elegant architecture. High-quality construction with branded fittings & interiors. A Floor is the Canvas for your Dream Home.",
-    tags: ["2 & 3 BHK", "Luxury Living", "24x7 Security"],
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "BLF Infratech (Fully Furnished)",
+    location: "Gurugram",
+    price: "₹1.85 Cr",
+    desc: "Fully furnished premium floors with elegant interiors, smart layouts, and modern luxury living.",
+    tags: ["Fully Furnished", "Luxury Floors", "Ready to Move"],
+    image: "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?auto=format&fit=crop&w=1600&q=80"
+    ],
     developer: "BLF Developers"
   },
   {
     id: 3,
-    title: "Signature Global Park 4 & 5",
-    location: "South Gurugram",
-    desc: "Premium independent floors surrounded by nature with a peaceful & green environment. IGBC & EDGE certified green homes with 30+ premium amenities.",
-    tags: ["2 & 3 BHK", "Independent", "Green Homes"],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    developer: "Signature Global"
+    title: "Trehan Floors",
+    location: "Gurugram",
+    price: "₹1.60 Cr - ₹1.80 Cr",
+    desc: "Well-designed independent floors in a gated community with quality construction and lifestyle amenities.",
+    tags: ["Independent Floors", "Gated", "Premium"],
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=1600&q=80"
+    ],
+    developer: "Trehan"
   },
   {
     id: 4,
-    title: "Eldeco Terra & Sol",
-    location: "Sector 80, Gurugram",
-    desc: "Palatial 3 BR World Residences. Iconic Onigiri-inspired architecture with panoramic views overlooking Aravalli Hills and Golf Course.",
-    tags: ["3 BR", "Ultra-Luxury", "Resort-Style"],
-    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    developer: "Eldeco Group"
+    title: "Signature Global Park 4 & 5",
+    location: "Gurugram",
+    price: "₹1.10 Cr",
+    desc: "Modern independent floors with green surroundings, clubhouse lifestyle, and G+4 configuration.",
+    tags: ["G+4", "Independent Floors", "Green Living"],
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80"
+    ],
+    developer: "Signature Global"
   }
 ];
 
-export const BRANDS = ["Eldeco", "Ashiana", "Trehan", "Signature Global", "M3M"];
+export const BRANDS = ["Eldeco", "Ashiana", "Trehan", "Signature Global", "M3M", "BLF Infratech"];
