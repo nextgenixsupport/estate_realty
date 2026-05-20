@@ -2,7 +2,7 @@ export const PROPERTIES = [
   {
     id: 1,
     title: "Eldeco Terra & Sol",
-    location: "Sohna Road, Gurgaon",
+    location: "Gurgaon",
     price: "₹2.50 Cr - ₹3.00 Cr",
     desc: "Palatial residences with iconic architecture, skyline views, and premium amenities in South Gurgaon.",
     tags: ["Ultra Luxury", "3 BR", "High-Rise"],
@@ -16,7 +16,7 @@ export const PROPERTIES = [
   {
     id: 2,
     title: "BLF Infratech (Fully Furnished)",
-    location: "Sohna Road, Gurgaon",
+    location: "Gurugram",
     price: "₹1.85 Cr",
     desc: "Fully furnished premium floors with elegant interiors, smart layouts, and modern luxury living.",
     tags: ["Fully Furnished", "Luxury Floors", "Ready to Move"],
@@ -30,7 +30,7 @@ export const PROPERTIES = [
   {
     id: 3,
     title: "Trehan Floors",
-    location: "Sohna Road, Gurgaon",
+    location: "Gurugram",
     price: "₹1.60 Cr - ₹1.80 Cr",
     desc: "Well-designed independent floors in a gated community with quality construction and lifestyle amenities.",
     tags: ["Independent Floors", "Gated", "Premium"],
@@ -44,7 +44,7 @@ export const PROPERTIES = [
   {
     id: 4,
     title: "Signature Global Park 4 & 5",
-    location: "Sohna Road, Gurgaon",
+    location: "Gurugram",
     price: "₹1.10 Cr",
     desc: "Modern independent floors with green surroundings, clubhouse lifestyle, and G+4 configuration.",
     tags: ["G+4", "Independent Floors", "Green Living"],
