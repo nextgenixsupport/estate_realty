@@ -17,7 +17,7 @@ export default function Navbar({ currentView, setCurrentView }) {
   };
 
   return (
-    <nav className="fixed w-full z-50 bg-slate-900/95 backdrop-blur-md border-b border-yellow-500/20 text-white transition-all duration-300">
+    <nav className="fixed w-full z-50 bg-slate-900/55 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgba(15,23,42,0.35)] text-white transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center cursor-pointer" onClick={() => handleNav('home')}>
@@ -33,14 +33,14 @@ export default function Navbar({ currentView, setCurrentView }) {
               <button
                 key={link.id}
                 onClick={() => handleNav(link.id)}
-                className={`text-sm font-medium tracking-wide transition-colors ${
+                className={`tap-animate text-sm font-medium tracking-wide transition-colors ${
                   currentView === link.id ? 'text-yellow-500' : 'text-slate-300 hover:text-white'
                 }`}
               >
                 {link.name}
               </button>
             ))}
-            <a href="tel:9289035225" className="flex items-center gap-2 bg-yellow-600 hover:bg-yellow-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all">
+            <a href="tel:9289035225" className="tap-animate flex items-center gap-2 bg-yellow-600/95 hover:bg-yellow-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg">
               <Phone size={16} />
               +91 92890 35225
             </a>
