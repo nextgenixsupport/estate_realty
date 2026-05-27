@@ -58,3 +58,14 @@ export const PROPERTIES = [
 ];
 
 export const BRANDS = ["Eldeco", "Ashiana", "Trehan", "Signature Global", "M3M", "BLF Infratech"];
+
+
+export const BUDGET_OPTIONS = [
+  "₹1.00 Cr - ₹1.25 Cr",
+  "₹1.25 Cr - ₹1.50 Cr",
+  "₹1.50 Cr - ₹1.75 Cr",
+  "₹1.75 Cr - ₹2.00 Cr",
+  "₹2.00 Cr - ₹2.50 Cr",
+  "₹2.50 Cr - ₹3.00 Cr",
+  "₹3.00 Cr+"
+];
