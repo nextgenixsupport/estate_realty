@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MapPin, ChevronRight, ArrowRight } from 'lucide-react';
 import { PROPERTIES, BRANDS } from '../data/constants';
 

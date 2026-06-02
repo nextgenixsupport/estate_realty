@@ -1,4 +1,3 @@
-import React from 'react';
 import { Building, Star, Phone, Mail, MapPin } from 'lucide-react';
 
 export default function Footer({ setCurrentView }) {
