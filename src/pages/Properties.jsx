@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { MapPin, IndianRupee, X, Phone, Mail, Send } from 'lucide-react';
 import { PROPERTIES, BUDGET_OPTIONS } from '../data/constants';
 import { sendLeadEmail } from '../utils/email';
+import { trackContactConversion } from '../utils/conversionTracking';
 
 const initialForm = { name: '', email: '', phone: '', selection: '', captchaAnswer: '' };
 const POPUP_CAPTCHA = { label: '1 + 7', result: 8 };
@@ -28,6 +29,7 @@ export default function Properties() {
     setStatus('');
     try {
       await sendLeadEmail({ source: 'Property Popup', name: formData.name, email: formData.email, phone: formData.phone, property: formData.selection, location: selectedProperty.location, price: selectedProperty.price });
+      trackContactConversion();
       setStatus('Inquiry sent successfully.');
       setFormData(initialForm);
     } catch {
