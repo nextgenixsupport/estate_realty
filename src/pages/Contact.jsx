@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Phone, Mail } from 'lucide-react';
 import { PROPERTIES, BUDGET_OPTIONS } from '../data/constants';
 import { sendLeadEmail } from '../utils/email';
+import { trackContactConversion } from '../utils/conversionTracking';
 
 const initialState = { fullName: '', phone: '', selection: '', message: '', captchaAnswer: '' };
 const CONTACT_CAPTCHA = { label: '1 + 7', result: 8 };
@@ -26,6 +27,7 @@ export default function Contact() {
         property: formData.selection,
         message: formData.message
       });
+      trackContactConversion();
       setFormData(initialState);
       setStatus('Message sent successfully.');
     } catch {
