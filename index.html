@@ -8,9 +8,13 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18008595740"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      window.gtag = function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
       gtag('js', new Date());
       gtag('config', 'AW-18008595740');
+      window.trackContactConversion = function trackContactConversion(){
+        gtag('event', 'conversion', {'send_to': 'AW-18008595740/EiveCP-j2accEJy6lYtD'});
+      };
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
