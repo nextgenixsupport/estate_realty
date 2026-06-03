@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import { MessageCircle, Phone, Send, Sparkles, X } from 'lucide-react';
 import { BUDGET_OPTIONS, PROPERTIES } from './data/constants';
 import { sendLeadEmail } from './utils/email';
+import { trackContactConversion } from './utils/conversionTracking';
 
 const PHONE_NUMBER = '919289035225';
 const WHATSAPP_TEXT = 'Hi, I am interested in your properties in Gurugram.';
@@ -60,6 +61,7 @@ export default function App() {
         phone: popupForm.phone,
         property: popupForm.selection
       });
+      trackContactConversion();
       setPopupForm(initialPopupForm);
       setPopupStatus('Thanks! Our team will contact you shortly.');
     } catch {
